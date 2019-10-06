@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta name="description" content="Test for Job Application">
+		<meta name="author" content="Sunny Sharma">
+		<title>Sunny - Test Knowledge City</title>
+		<!-- Bootstrap core CSS -->
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<!-- main css file -->
+		<link href="css/all.css" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet">
+		<script>
+			var current_url = window.location.pathname;
+			var urlSplit = current_url.split( '/' );
+			var tlength = +urlSplit.length - +1;
+			urlSplit[tlength]='';
+			urlImp = urlSplit.join('/');
+			var siteURL = window.location.protocol+'//'+window.location.host+urlImp;
+		</script>
+	</head>
+	<body onload="showHomePage()">
+		  <div class="container">
+			<div class="row">
+			  <div class="col-sm-12 col-md-10 col-lg-10 mx-auto" style="padding-top: 20px;">
+				<h4 style="text-align: center;">User List</h4>
+				<table class="table table-striped" id="myTable">
+				
+				</table>
+				<ul class="pagination" id="paginationId">
+				  
+				</ul>
+			  </div>
+			</div>
+		  </div>		    
+		<script src="js/jquery.slim.min.js"></script>
+		<script src="js/bootstrap.bundle.min.js"></script>
+		<script src="js/custom.js"></script>
+		<div class="footerDiv">
+			<a class="logOutLink" onclick="logUsrOut()" title="logout" href="JavaScript:Void(0);"><img src="img/lg.png" class="lgImg"/>Log Out</a>
+		</div>
+	</body>
+</html>
